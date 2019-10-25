@@ -1,3 +1,3 @@
 # camel-kafka-poc
 
-Camel, Springboot with apache kafka POC.
+Camel, SpringBoot, REST Api with apache kafka POC.
