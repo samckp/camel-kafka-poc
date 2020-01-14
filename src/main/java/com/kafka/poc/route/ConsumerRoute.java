@@ -16,6 +16,8 @@ public class ConsumerRoute extends RouteBuilder {
 
         String toKafka = new StringBuilder().append(kafkaServer).append("?").append(topicName).append("&").append(zooKeeperHost).append("&").append(serializerClass).toString();
 
-        from("{{inRoute}}").split().tokenize("\n").to(toKafka);
+        from("{{inRoute}}")
+                .routeId("consuerRoute")
+                .split().tokenize("\n").to(toKafka);
     }
 }
