@@ -15,5 +15,8 @@ Consume from Topic
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic --from-beginning
 
 Produce on Topic
-kafka-console-producer -broker-list localhost:9092 -topic test-topic
+kafka-console-producer --broker-list localhost:9092 --topic test-topic
 
+
+Print Whole message from a topic.
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic -from-beginning
