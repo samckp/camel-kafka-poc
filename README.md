@@ -20,3 +20,8 @@ kafka-console-producer --broker-list localhost:9092 --topic test-topic<BR>
 
 Print Whole message from a topic.<BR>
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic -from-beginning<BR>
+
+#Test with multibroker with User's Role
+------------------
+#Kafka 3.3.2 version
+kafka-topics.bat --create --topic test-topic --bootstrap-server localhost:9092 --replication-factor 3 --partitions 5
